@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <script src="ds:/Sys/app.js"></script>
+</head>
+	
+<script>
+    //Called after application is started.
+    function OnStart()
+    {
+    const iframe = document.getElementById('ytp');
+const iframeContent = iframe.contentDocument.documentElement.innerHTML;
+alert(iframeContent);
+        app.ShowPopup( "HTML Rocks!" );
+        document.getElementById("ytp").src=document.getElementById("ytp").src.replace("m7dJWxlVfgQ","-WsbrUAvBpU");
+        //alert(document.getElementById("ytp").documentElement.innerHTML);
+    }
+</script>
+
+<style>
+	body { background-color: #ffffff; }
+    .hello 
+    { 
+        margin:0px;
+        padding:0px;
+        width: 100%;
+        margin-top: 2em;
+        text-align: center;
+        color: blue;
+    }
+</style>
+<script>
+
+</script>
+<body onload="app.Start()">
+
+	<div class=hello>
+		<iframe id="ytp2" width="100%" height="100%" src="https://www.youtube.com/embed/m7dJWxlVfgQ" title="O desfile completo da Joyce Kellen no Rainha da Mandioca 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; download; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<iframe id="ytp" width="100" height="100" src="https://www.youtube.com/embed/m7dJWxlVfgQ" title="O desfile completo da Joyce Kellen no Rainha da Mandioca 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; download; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+	
+</body>
+</html>
